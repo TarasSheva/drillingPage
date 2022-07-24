@@ -1,5 +1,7 @@
-const token = '5593072673:AAEaxtBKIGYlhW96AYpeeklSJ-tttKHFgWs'
-const chatId = '-1001668145007'
+// const token = '5593072673:AAEaxtBKIGYlhW96AYpeeklSJ-tttKHFgWs'
+const token = '5495977901:AAFUOe2FHEplCg5YPMvDyu2BwsV5eUqEGhw'
+// const chatId = '-1001668145007'
+const chatId = '-1001656053766'
 const urlApi = `https://api.telegram.org/bot${token}/sendMessage`
 const modal = document.getElementById('modal')
 const closeBtn = document.getElementById('close-btn')
