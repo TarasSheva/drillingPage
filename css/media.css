@@ -1,0 +1,123 @@
+@media (max-width: 1140px) {
+    .logo {
+        font-size: 16px;
+        width: 120px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hiden {
+        display: none;
+    }
+
+    .footer {
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        padding-top: 50px;
+        width: 420px;
+        font-size: 40px;
+    }
+
+    .text {
+        width: 420px;
+    }
+
+    .footer {
+        width: 450px;
+    }
+
+    .footer-about-text {
+        font-size: 12px;
+    }
+
+    .about-text-item {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 12px;
+        width: 80px;
+    }
+
+    .button {
+        font-size: 10px;
+        padding: 10px 8px;
+    }
+
+    .connect-content {
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .connect-item>i {
+        display: none;
+    }
+
+    .title {
+        padding-top: 30px;
+        width: 300px;
+        font-size: 30px;
+    }
+
+    .text {
+        width: 300px;
+    }
+
+    .button-main {
+        font-size: 20px;
+    }
+
+    .contact-me-title {
+        font-size: 20px;
+    }
+
+    .footer {
+        width: 320px;
+        display: block;
+    }
+
+    .footer-about {
+        width: 100%;
+    }
+
+    .about-text-item {
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo {
+        display: none;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 10px;
+        margin: 8px;
+    }
+
+    .connect-content {
+        font-size: 12px;
+    }
+
+    .footer {
+        width: 300px;
+    }
+}

@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background: #f5de16;
+    align-items: center;
+}
+
+.logo {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:active {
+    background: white;
+    color: black;
+}
+
+.connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.connect-item {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.br {
+    width: 1px;
+    height: 36px;
+    background: gray;
+    margin: 0 8px;
+}
+
+.connect-content {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.connect-content-bottom {
+    color: black;
+    font-weight: 700;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(60, 60, 60, 0.2), rgba(0, 0, 0, 0.5)), url("../img/title.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.text {
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    color: white;
+    padding-top: 20px 0;
+}
+
+.button-main {
+    margin: auto;
+    font-size: 30px;
+    border: none;
+    border-radius: 40px;
+    padding: 20px 40px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-main:hover {
+    background: #f5de16;
+    color: black;
+}
+
+.contact-me {
+    background: #f5de16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.contact-me-title {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form>label {
+    margin: 10px;
+}
+
+.input {
+    margin: 10px;
+    background: transparent;
+    padding: 6px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.input-btn {
+    margin: 10px;
+    background: transparent;
+    padding: 6px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-btn:hover {
+    background: #000000cf;
+    color: white;
+}
+
+.input-btn:active {
+    background: white;
+    color: black;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.massage {
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.close-btn {
+    display: flex;
+    justify-content: end;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    border: 1px solid black;
+    border-radius: 14px;
+    width: 100px;
+    margin: 10px auto;
+    padding: 8px 14px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.confirm-btn:hover {
+    background: #000000cf;
+    color: white;
+}
+
+.confirm-btn:active {
+    background: white;
+    color: black;
+}
+
+footer {
+    background-color: #000000cf;
+}
+
+.footer {
+    width: 1000px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.footer-about {
+    width: 33%;
+    padding: 0 10px;
+}
+
+.footer-about-title {
+    text-align: start;
+    padding: 20px 0;
+    font-size: 24px;
+    color: white;
+}
+
+.footer-about-text {
+    color: white;
+    text-align: start;
+}
+
+.about-text-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom {
+    padding: 4px;
+    text-align: center;
+    background-color: black;
+    color: gray;
+}

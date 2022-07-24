@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Буріння свердловин</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-text">Буріння свердловин</div>
+        </div>
+        <a href="#contact-me" class="button">Замовити звінок</a>
+        <div class="connect">
+            <div class="connect-item">
+                <i class="material-icons">call</i>
+                <div class="connect-content">
+                    Номер телефону
+                    <br/>
+                    <a href=”tel:+380639746797” class="connect-content-bottom">+380 63 974 67 97</a>
+                </div>   
+            </div>
+            <div class="br hiden"></div>
+            <div class="connect-item hiden">
+                <i class="material-icons">alternate_email</i>
+                <div class="connect-content">
+                    Email
+                    <br/>
+                    <a href=”email:admin@drilling.com” class="connect-content-bottom">admin@drilling.com</a>
+                </div>
+            </div>
+            <div class="br hiden"></div>
+            <div class="connect-item hiden">
+                <i class="material-icons">schedule</i>
+                <div class="connect-content">
+                    Графік роботи
+                    <br/>
+                    <div class="connect-content-bottom">Пн - Нд: 5:00 - 22:00</div>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main-container">
+            <div class="title">Буріння свердловин на воду "під ключ"</div>
+            <div class="text">Буріння свердловин на воду пов'язане з багатьма складнощами. Працюючи буровики зіштовхуються з плавунами, твердими породами, самовиливом джерела, або відсутністю води. Щоб вирішити ці проблеми, потрібен професіоналізм та досвід</div>
+            <a href="#contact-me" class="button-main">Замовити звінок</a>
+        </div>
+    </div>
+
+    <div class="contact-me" id="contact-me">
+        <div class="contact-me-title">Зателефонувати мені</div>
+        <form id="form">
+            <label>Ім'я:</label>            
+            <input type="text" name="name" class="input" placeholder="Имя" />
+            <label>Телефон:</label>
+            <input type="number" name="phone" class="input" placeholder="Телефон" />
+            <button type="submit" onclick="() => concole.log('ok')" class="input-btn">Відправити</button>
+        </form>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="close-btn" id="close-btn"><i class="material-icons">close</i></div>
+        <div class="massage">Дякуємо! Ми зателефонуемо Вам найближчим часом.</div>
+        <div class="confirm-btn" id="confirm-btn">Confirm</div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-about">
+                <div class="footer-about-title">Про Нас</div>
+                <div class="footer-about-text">
+                    Буріння свердловин любої складності!<br/>
+                    Працюемо в Киеві, Київскій області!<br/>                    
+                    Можливий виїзд в Черкаси, Чернігів та Житомир!<br/>            
+                </div>
+            </div>
+
+            <div class="footer-about">
+                <div class="footer-about-title">Графік роботи</div>
+                <div class="footer-about-text">
+                    Працюемо цілодобово, 7 днів на тиждень.<br/>
+                    <br/>                    
+                    Пн - Нд: 5:00 - 22:00<br/>            
+                </div>
+            </div>
+
+            <div class="footer-about">
+                <div class="footer-about-title">Зв'язок</div>
+                <div class="footer-about-text">
+                    +380 63 974 67 97<br/>
+                    <br/>                    
+                    <div class="about-text-item"><i class="material-icons">mail</i><span>&nbsp;admin@drilling.com<br/></span></div>
+                    <br/>                    
+                    <div class="about-text-item"><i class="material-icons">location_on</i><span>&nbsp;Київ, Київська область<br/></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © Авторске право 2022 Drilling-2021. Всі права захищені.
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
