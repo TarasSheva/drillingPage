@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,28 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/media.css">
-    <title>Буріння свердловин</title>
+    <title>Улаштування буронабивних паль</title>
 </head>
+
 <body>
     <header class="header">
-        <div class="logo">
-            <div class="logo-text">Буріння свердловин</div>
-        </div>
         <a href="#contact-me" class="button">Замовити звінок</a>
         <div class="connect">
             <div class="connect-item">
                 <i class="material-icons">call</i>
                 <div class="connect-content">
                     Номер телефону
-                    <br/>
-                    <a href=”tel:+380639746797” class="connect-content-bottom">+380 63 974 67 97</a>
-                </div>   
+                    <br />
+                    <a href='tel:+380636808066' class="connect-content-bottom">+380 63 680 80 66</a>
+                </div>
             </div>
             <div class="br hiden"></div>
             <div class="connect-item hiden">
                 <i class="material-icons">alternate_email</i>
                 <div class="connect-content">
                     Email
-                    <br/>
-                    <a href=”email:admin@drilling.com” class="connect-content-bottom">admin@drilling.com</a>
+                    <br />
+                    <a href='mailto:q4969060@gmail.com' class="connect-content-bottom">q4969060@gmail.com</a>
                 </div>
             </div>
             <div class="br hiden"></div>
@@ -38,28 +37,103 @@
                 <i class="material-icons">schedule</i>
                 <div class="connect-content">
                     Графік роботи
-                    <br/>
+                    <br />
                     <div class="connect-content-bottom">Пн - Нд: 5:00 - 22:00</div>
-                </div> 
+                </div>
             </div>
         </div>
     </header>
     <div class="main">
         <div class="main-container">
-            <div class="title">Буріння свердловин на воду "під ключ"</div>
-            <div class="text">Буріння свердловин на воду пов'язане з багатьма складнощами. Працюючи буровики зіштовхуються з плавунами, твердими породами, самовиливом джерела, або відсутністю води. Щоб вирішити ці проблеми, потрібен професіоналізм та досвід</div>
+            <div class="title">Улаштування буронабивних паль</div>
+            <div class="text">У нас широкий спектр бурового та допоміжного
+                обладнання, необхідного для виконання повного комплексу робіт з проектування та виготовлення
+                буронабивних та буроін'єкційних паль в Україні діаметром від 300 до 1200 мм, глибиною до 36 м із
+                видобутими та
+                не вилучаються обсадними трубами.</div>
             <a href="#contact-me" class="button-main">Замовити звінок</a>
         </div>
     </div>
 
+    <div class="advantages">
+        <div class="advantages-title">Наші переваги</div>
+        <div class="advantages-wrapper">
+            <div class="advantages-item">
+                <i class="material-icons">payments</i>
+                <div class="advantages-item-text">Низька ціна</div>
+            </div>
+            <div class="advantages-item">
+                <i class="material-icons">hourglass_bottom</i>
+                <div class="advantages-item-text">Вчасне виконання</div>
+            </div>
+            <div class="advantages-item">
+                <i class="material-icons">settings</i>
+                <div class="advantages-item-text">Висока якість</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="equipment">
+        <div class="equipment-title">Наше обладнання</div>
+        <div class="slider">
+            <div class="item">
+                <img src="img/01.jpeg" alt="Первый слайд">
+            </div>
+
+            <div class="item">
+                <img src="img/02.jpeg" alt="Второй слайд">
+            </div>
+
+            <div class="item">
+                <img src="img/03.jpeg" alt="Третий слайд">
+            </div>
+
+            <div class="item">
+                <img src="img/04.jpeg" alt="Третий слайд">
+            </div>
+
+            <div class="item">
+                <img src="img/05.jpeg" alt="Третий слайд">
+            </div>
+
+            <div class="item">
+                <img src="img/06.jpeg" alt="Третий слайд">
+            </div>
+
+            <div class="item">
+                <img src="img/07.jpeg" alt="Третий слайд">
+            </div>
+
+            <div class="item">
+                <img src="img/09.jpeg" alt="Третий слайд">
+            </div>
+
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+        </div>
+
+        <div class="slider-dots">
+            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(6)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(7)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(8)"></span>
+        </div>
+
+    </div>
+
+
     <div class="contact-me" id="contact-me">
         <div class="contact-me-title">Зателефонувати мені</div>
         <form id="form">
-            <label>Ім'я:</label>            
-            <input type="text" name="name" class="input" placeholder="Имя" />
+            <label>Ім'я:</label>
+            <input type="text" name="name" class="input" placeholder="Ім'я" required />
             <label>Телефон:</label>
-            <input type="number" name="phone" class="input" placeholder="Телефон" />
-            <button type="submit" onclick="() => concole.log('ok')" class="input-btn">Відправити</button>
+            <input type="number" name="phone" class="input" placeholder="099 999 99 99" required />
+            <button type="submit" class="input-btn">Відправити</button>
         </form>
     </div>
 
@@ -74,29 +148,31 @@
             <div class="footer-about">
                 <div class="footer-about-title">Про Нас</div>
                 <div class="footer-about-text">
-                    Буріння свердловин любої складності!<br/>
-                    Працюемо в Киеві, Київскій області!<br/>                    
-                    Можливий виїзд в Черкаси, Чернігів та Житомир!<br/>            
+                    Улаштування буронабивних паль любої складності!<br />
+                    Працюемо в Киеві, Київскій області!<br />
+                    Можливий виїзд в Черкаси, Чернігів та Житомир!<br />
                 </div>
             </div>
 
             <div class="footer-about">
                 <div class="footer-about-title">Графік роботи</div>
                 <div class="footer-about-text">
-                    Працюемо цілодобово, 7 днів на тиждень.<br/>
-                    <br/>                    
-                    Пн - Нд: 5:00 - 22:00<br/>            
+                    Працюемо цілодобово, 7 днів на тиждень.<br />
+                    <br />
+                    Пн - Нд: 5:00 - 22:00<br />
                 </div>
             </div>
 
             <div class="footer-about">
                 <div class="footer-about-title">Зв'язок</div>
                 <div class="footer-about-text">
-                    +380 63 974 67 97<br/>
-                    <br/>                    
-                    <div class="about-text-item"><i class="material-icons">mail</i><span>&nbsp;admin@drilling.com<br/></span></div>
-                    <br/>                    
-                    <div class="about-text-item"><i class="material-icons">location_on</i><span>&nbsp;Київ, Київська область<br/></span></div>
+                    +380 63 680 80 66<br />
+                    <br />
+                    <div class="about-text-item"><i
+                            class="material-icons">mail</i><span>&nbsp;q4969060@gmail.com<br /></span></div>
+                    <br />
+                    <div class="about-text-item"><i class="material-icons">location_on</i><span>&nbsp;Київ, Київська
+                            область<br /></span></div>
                 </div>
             </div>
         </div>
@@ -104,8 +180,9 @@
             © Авторске право 2022 Drilling-2021. Всі права захищені.
         </div>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
